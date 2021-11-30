@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import resume from "../../../../images/resume.png";
-import onsAuto from "../../../images/onsAuto.png";
-import onsTour from "../../../images/onsTour.png";
-import onsMedico from "../../../images/onsMedico.png";
+import "./Resume.css";
 import {
   Card,
   CardActions,
@@ -11,7 +8,6 @@ import {
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-// import Button from "@restart/ui/esm/Button";
 
 const Resume = () => {
   const [projects, SetProjects] = useState([]);
@@ -55,34 +51,30 @@ const Resume = () => {
                   className="col-12"
                   style={{ textDecoration: "none" }}
                 >
-                  <h6 className="float-right">
+                  <div className="social-links">
                     <a
                       target="_blank"
-                      className="btn btn-light rounded-pill outer-shadow hover-in-shadow"
+                      className="outer-shadow hover-in-shadow"
                       style={{ textDecoration: "none" }}
-                      href="https://github.com/shihab-2021/onsAuto-React-Project/tree/main/onsAuto-client-side-code"
+                      href={project.git_clink_link}
                     >
                       <i class="fab fa-git"></i>
                     </a>
-                  </h6>
-                  <h6>
                     <a
                       target="_blank"
-                      className="btn btn-light rounded-pill"
+                      className="outer-shadow hover-in-shadow"
                       style={{ textDecoration: "none" }}
-                      href="https://onsauto-6360e.web.app/"
+                      href={project.live_link}
                     >
                       <i className="fas fa-link"></i>
                     </a>
                     <Link
                       to={`/details/${project.key}`}
-                      className="w-50 text-center my-2"
+                      className="outer-shadow hover-in-shadow"
                     >
-                      <button className="btn btn-outline-success">
-                        Detail <i className="fa-solid fa-arrow-right"></i>
-                      </button>
+                      <i className="fas fa-info"></i>
                     </Link>
-                  </h6>
+                  </div>
                 </CardActions>
               </CardContent>
             </Card>

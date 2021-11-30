@@ -84,7 +84,7 @@ const Banner = () => {
               style={{ textDecoration: "none", marginTop: "120px" }}
               className="btn-1 outer-shadow hover-in-shadow"
               href={
-                "https://drive.google.com/u/0/uc?id=1GHgLxAPYuvSVkgG93VH0auNsnSzepYw3&export=download"
+                "https://drive.google.com/u/0/uc?id=13ISob0W9dDRVSax7bJU_5vqrlawZ4cI_&export=download"
               }
               download="Shajibul_Alam_Resume.pdf"
             >

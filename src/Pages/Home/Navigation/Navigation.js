@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navigation.css";
 
 const Navigation = () => {
@@ -91,9 +91,9 @@ const Navigation = () => {
         class="navbar navbar-expand-lg navbar-light"
       >
         <div class="container">
-          <a class="navbar-brand logo" href="#">
+          <Link class="navbar-brand logo" to="/">
             Shihab
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -108,29 +108,19 @@ const Navigation = () => {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
+                <a class="nav-link" href="/home#about">
+                  About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  Disabled
-                </a>
+                <Link className="nav-link" to="/blogs">
+                  Blogs
+                </Link>
               </li>
             </ul>
           </div>
