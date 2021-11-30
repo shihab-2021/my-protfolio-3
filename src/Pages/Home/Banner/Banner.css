@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&family=Lobster+Two:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+.banner-logo {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  font-family: "Lobster Two", cursive !important;
+  font-weight: 700;
+  color: #8babdb;
+}
+.banner-skills {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  color: #596cbb;
+}
+.skills {
+  color: rgb(224, 84, 131);
+}
+.effect-wrap .effect {
+  position: absolute;
+  z-index: 2;
+}
+.effect-1 {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #8a49ff;
+  right: 10%;
+  bottom: 10%;
+  animation: spin 10s linear infinite;
+}
+.effect-2 {
+  left: 3%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: topBounce 3s ease-in-out infinite;
+}
+.effect-2 div {
+  height: 3px;
+  width: 3px;
+  background-color: #ff9c07;
+  margin: 0 3px 8px;
+}
+.effect-3 {
+  height: 180px;
+  width: 180px;
+  border: 25px solid rgb(226, 86, 114);
+  border-radius: 50%;
+  left: 50%;
+  top: -120px;
+  animation: leftBounce 3s ease-in-out infinite;
+}
+.effect-4 {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  left: 30%;
+  top: 20%;
+  animation: spin 15s linear infinite;
+}
+.effect-4::before {
+  content: "";
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  position: absolute;
+  opacity: 0.5;
+  left: -35px;
+  top: -25px;
+}
+.effect-5 {
+  height: 50px;
+  width: 50px;
+  right: 10%;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 10s linear infinite;
+}
+.effect-5 div {
+  width: 1px;
+  background-color: #4dd0e1;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes topBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+@keyframes leftBounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+}
+
+.home-section {
+  position: relative;
+}
+.home-section .full-screen {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+.home-section .home-text,
+.home-section .home-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.home-section .home-text {
+  /* background-color: violet; */
+}
+.home-section .home-img .img-box {
+  max-width: 450px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  padding: 15px;
+}
+.home-section .home-img .img-box img {
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid transparent;
+}
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 700px) {
+  .row-1 {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .home-section .home-text,
+  .home-section .home-img {
+    max-width: 100%;
+    padding: 0 15px;
+    z-index: 20;
+  }
+  .home-section .home-img .img-box {
+    /* max-width: 450px; */
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    padding: 15px;
+  }
+  .home-section .home-img .img-box img {
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+  }
+}

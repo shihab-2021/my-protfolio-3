@@ -1,0 +1,52 @@
+[
+  {
+    "name": "E-commerce Car Selling - onsAuto-React-Project",
+    "image-name": "Home Page",
+    "image": "https://i.ibb.co/bQNMwzW/onsAuto.png",
+    "image1-name": "Users Dashboard",
+    "image1": "https://i.ibb.co/bJPXCY9/ons-Auto-1.png",
+    "image2-name": "Admin Dashboard",
+    "image2": "https://i.ibb.co/6gHDDSp/onsAuto.png",
+    "detail1": "This project is based on e-commerce, specifically car selling. Admin option is available so that admin can update anything.",
+    "detail2": "Admin user interface is different from the normal user interface.",
+    "detail3": "Users can book any service and also give some reviews. Admin have the power to make anyone admin. For demo purpose admin email is: admin@admin.com and the password is: 123456",
+    "tech": "React.js, Firebase, MongoDB, Node Express,Heroku, Material UI",
+    "live-link": "https://onsauto-6360e.web.app/",
+    "git-client-side": "https://github.com/shihab-2021/onsAuto-React-Project/tree/main/onsAuto-client-side-code",
+    "git-server-side": "https://github.com/shihab-2021/onsAuto-React-Project/tree/main/onsAuto-server-side-code",
+    "key": "1"
+  },
+  {
+    "name": "Tour Management - onsTour-React-Project",
+    "image-name": "Home Page",
+    "image": "https://i.ibb.co/KwGrNCB/onsTour.png",
+    "image1-name": "All Packages",
+    "image1": "https://i.ibb.co/09NXwnN/ons-Tour-2.png",
+    "image2-name": "My Booked Package",
+    "image2": "https://i.ibb.co/tQP7xMz/ons-Tour-1.png",
+    "detail1": "This project represents simple tour management. It is one kind of e-commerce site.",
+    "detail2": "Users can book any tour service. For booking  users must have to be logged in.",
+    "detail3": "There are some other options like Dashboard for showing all users booking, My Booking for showing users own booking packages, All Users for showing all logged in users and so on.",
+    "tech": "React.js, Firebase, MongoDB, Node Express, Heroku, React-Bootstrap",
+    "live-link": "https://onstour-e8adb.web.app/",
+    "git-client-side": "https://github.com/shihab-2021/onsTour-React-Project/tree/main/onsTour",
+    "git-server-side": "https://github.com/shihab-2021/onsTour-React-Project/tree/main/onsTour-sarver",
+    "key": "2"
+  },
+  {
+    "name": "Simple Medical Care - ONSmedico-React-Project",
+    "image-name": "Home Page",
+    "image": "https://i.ibb.co/n8qSBDg/ons-Medico.png",
+    "image1-name": "Services Section",
+    "image1": "https://i.ibb.co/VBmhcBn/ONS-Medico-1.png",
+    "image2-name": "Doctors Section",
+    "image2": "https://i.ibb.co/DzGLX1J/ONS-Medico.png",
+    "detail1": "It is a  simple medical care or clinic management website or project.",
+    "detail2": "On the home page users can see all the services and reviews. ",
+    "detail3": "Users can see the service details if login. Users can sign in by google sign in or by using email-password if the user registered the email before. For this purpose Firebase authentication has been used. ",
+    "tech": " React.js, Firebase, React-Router-dom, React-Bootstrap",
+    "live-link": "https://onsmedico.web.app/",
+    "git-client-side": "https://github.com/shihab-2021/ONSmedico-React-Project",
+    "key": "3"
+  }
+]
